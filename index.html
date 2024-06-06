@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+
+    <!-- Inclui o arquivo JavaScript externo -->
+    <script type="text/javascript" src="jogoDaVelha.js"></script>
+</head>
+<body onload="iniciar()"> <!-- A função iniciar() será chamada após o carregamento da página -->
+    <header>
+        <h1>
+            <strong>JOGO DA VELHA</strong>
+        </h1>
+    </header>
+
+    <!-- Área do tabuleiro -->
+    <div id="quadro"></div><br>
+
+    <!-- Entrada para linha e coluna -->
+    Linha: <input id='linha' type="Number" min="1" max="3"><br>
+    Coluna: <input id='coluna' type="Number" min="1" max="3"><br>
+
+    <!-- Botão para marcar a posição -->
+    <button onclick="jogar()">Marcar</button>
+
+    <!-- Exibição da vez do jogador -->
+    <div id="aviso">Vez do Jogador: </div>
+</body>
+</html>
